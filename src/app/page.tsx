@@ -1,7 +1,13 @@
+import Header from "./components/header";
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      angel
+    <div>
+      <Header />
+      <div className="flex flex-col pl-50 mt-50 gap-5">
+        <h3 className="font-bold text-3xl mb-2 text-indigo-400">Hi! I&apos;m Angel</h3>
+        <button className="w-1/7 font-bold rounded bg-sky-300 hover:bg-sky-500 text-white py-2 px-4 ">Contact Me</button>
+      </div>
     </div>
   );
 }
