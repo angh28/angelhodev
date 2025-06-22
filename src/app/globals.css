@@ -1,2 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+    --color-mypurple: #9D92EB;
+    --color-mydarkpurple: #485FB2;
+    --color-myblue: #64BAF9;
+    --color-mylightblue: #C9D8DE;
+    --color-mypink: #E098AD;
+    --color-mybeige: #FFF4E5;
+  }
