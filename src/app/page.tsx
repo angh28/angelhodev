@@ -20,18 +20,18 @@ export default function Home() {
         </div>
         {/* TODO: Replace pokemon with other icons */}
         <div className="grid grid-cols-2 gap-7 md:flex  md:flex-row md:gap-15">
-          <div className="cursor-pointer hover:scale-105">
+          <div className="cursor-pointer hover:scale-105 duration-200">
             <AppIcon name="about me" image="jigglypuff" />
           </div>
-          <div className="cursor-pointer hover:scale-105">
+          <div className="cursor-pointer hover:scale-105 duration-200">
             <AppIcon name="by me" image="chikorita" />
           </div>
-          <div className="cursor-pointer hover:scale-105">
+          <div className="cursor-pointer hover:scale-105 duration-200">
             <AppIcon name="for fun" image="ditto" />{" "}
           </div>
 
           <div
-            className="cursor-pointer hover:scale-105"
+            className="cursor-pointer hover:scale-105 duration-200"
             onClick={() =>
               (window.location.href = "mailto:ah.angelho@gmail.com")
             }
