@@ -8,7 +8,6 @@ export default function Home() {
       <div className="absolute w-70 h-70  translate-x-[50px] translate-y-[-220px] md:w-100 md:h-100 md:translate-x-[100px] md:translate-y-[-250px]  bg-mypurple rounded-full"></div>
       <div className="absolute  w-80 h-80 translate-x-[-150px] translate-y-[-200px] md:w-120 md:h-120 md:translate-x-[-180px] md:translate-y-[-200px] bg-mypink rounded-full"></div>
 
-      {/* TODO: Fix blue/purple circle overflow */}
       <div className="absolute right-0 bottom-0  translate-x-[-150px] translate-y-[270px] md:w-100 md:h-100 bg-mypurple rounded-full"></div>
       <div className="absolute right-0 bottom-0  translate-x-[200px] translate-y-[250px] md:w-130 md:h-130 bg-myblue rounded-full"></div>
 
