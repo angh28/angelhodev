@@ -1,6 +1,9 @@
 "use client";
-import { AppIcon } from "./components/AppIcon";
 import { HeartIcon } from "@heroicons/react/24/solid";
+import { AboutMeApp } from "./components/AboutMeApp";
+import { ByMeApp } from "./components/ByMeApp";
+import { ForFunApp } from "./components/ForFunApp";
+import { ContactMeApp } from "./components/ContactMeApp";
 
 export default function Home() {
   return (
@@ -20,24 +23,10 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-2 gap-7 md:flex  md:flex-row md:gap-15">
-          <div className="cursor-pointer hover:scale-105 duration-200">
-            <AppIcon label="about me" emoji="mesmile" isImage={true} />
-          </div>
-          <div className="cursor-pointer hover:scale-105 duration-200">
-            <AppIcon label="by me" emoji="🍀" isImage={false} />
-          </div>
-          <div className="cursor-pointer hover:scale-105 duration-200">
-            <AppIcon label="for fun" emoji="🫧" isImage={false} />
-          </div>
-
-          <div
-            className="cursor-pointer hover:scale-105 duration-200"
-            onClick={() =>
-              (window.location.href = "mailto:ah.angelho@gmail.com")
-            }
-          >
-            <AppIcon label="contact me" emoji="🔮" isImage={false} />
-          </div>
+          <AboutMeApp />
+          <ByMeApp />
+          <ForFunApp />
+          <ContactMeApp />
         </div>
       </div>
     </div>
