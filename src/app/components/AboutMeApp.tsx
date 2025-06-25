@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import Modal from "react-modal";
-
-Modal.setAppElement("#root");
+import { CustomModal } from "./CustomModal";
 
 export const AboutMeApp = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -34,10 +32,19 @@ export const AboutMeApp = () => {
           About me
         </div>
       </div>
-      <Modal isOpen={modalOpen} onRequestClose={closeModal}>
-        <div className="text-bold"> modal</div>
-        <button onClick={closeModal}>close</button>
-      </Modal>
+      <CustomModal isOpen={modalOpen} onRequestClose={closeModal}>
+        <div>
+          <button
+            className="text-2xl cursor-pointer hover:scale-105 duration-200"
+            onClick={closeModal}
+          >
+            ⬅️
+          </button>
+          <div className="pt-3 text-xl md:text-2xl font-bold underline decoration-myblue decoration-wavy underline-offset-3 md:underline-offset-6">
+            About Me
+          </div>
+        </div>
+      </CustomModal>
     </div>
   );
 };
