@@ -18,16 +18,16 @@ export default function Home() {
           </h3>
           <HeartIcon className="size-10 md:size-15 text-mypurple" />
         </div>
-        {/* TODO: Replace pokemon with other icons */}
+
         <div className="grid grid-cols-2 gap-7 md:flex  md:flex-row md:gap-15">
           <div className="cursor-pointer hover:scale-105 duration-200">
-            <AppIcon name="about me" image="jigglypuff" />
+            <AppIcon label="about me" emoji="mesmile" isImage={true} />
           </div>
           <div className="cursor-pointer hover:scale-105 duration-200">
-            <AppIcon name="by me" image="chikorita" />
+            <AppIcon label="by me" emoji="🍀" isImage={false} />
           </div>
           <div className="cursor-pointer hover:scale-105 duration-200">
-            <AppIcon name="for fun" image="ditto" />{" "}
+            <AppIcon label="for fun" emoji="🫧" isImage={false} />
           </div>
 
           <div
@@ -36,7 +36,7 @@ export default function Home() {
               (window.location.href = "mailto:ah.angelho@gmail.com")
             }
           >
-            <AppIcon name="contact me" image="psyduck" />
+            <AppIcon label="contact me" emoji="🔮" isImage={false} />
           </div>
         </div>
       </div>

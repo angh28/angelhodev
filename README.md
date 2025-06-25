@@ -2,6 +2,8 @@ Favicon - <a href="https://www.flaticon.com/free-icons/star" title="star icons">
 
 Other Icons - https://heroicons.com/solid
 
+Emojis copied from - https://getemoji.com/
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
