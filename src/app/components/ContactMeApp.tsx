@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { CustomModal } from "./CustomModal";
 
 export const ContactMeApp = () => {
@@ -37,18 +38,48 @@ export const ContactMeApp = () => {
           <div className="pt-3 text-xl md:text-2xl font-bold underline decoration-myblue decoration-wavy underline-offset-3 md:underline-offset-6">
             Contact Me
           </div>
-          <button
-            className="cursor-pointer hover:underline duration-100 md:text-xl font-bold pt-5 md:pt-8 text-mydarkpurple  decoration-mydarkpurple underline-offset-3 md:underline-offset-6"
-            onClick={() =>
-              (window.location.href = "mailto:ah.angelho@gmail.com")
-            }
-          >
-            Press to email me!
-          </button>
+          <div className="flex flex-col">
+            <button
+              className="flex gap-2 grow-0 items-center cursor-pointer bg-myblue hover:bg-blue-400 text-white font-bold mt-5 md:mt-8 py-2 px-4 rounded-2xl w-35 "
+              onClick={() =>
+                (window.location.href = "mailto:ah.angelho@gmail.com")
+              }
+            >
+              <div className="text-2xl">💌 </div>
+              Email me
+            </button>
+            <button
+              className="flex gap-1.5 grow-0 items-center cursor-pointer bg-myblue hover:bg-blue-400 text-white font-bold mt-5 py-2 px-4 rounded-2xl w-35"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/angel-ho-269629263/",
+                  "_blank"
+                )
+              }
+            >
+              <Image
+                src={`/images/linkedin_icon.png`}
+                width={30}
+                height={30}
+                alt={"Linkedin Icon"}
+              ></Image>
+              LinkedIn
+            </button>
+            <button
+              className="flex gap-2 items-center cursor-pointer grow-0 bg-myblue hover:bg-blue-400 text-white font-bold mt-5 py-2 px-4 rounded-2xl w-35"
+              onClick={() => window.open("https://github.com/angh28", "_blank")}
+            >
+              <Image
+                src={`/images/github_icon.png`}
+                width={25}
+                height={25}
+                alt={"Github Icon"}
+              ></Image>
+              Github
+            </button>
+          </div>
         </div>
       </CustomModal>
     </div>
   );
 };
-
-// onClick={() => (window.location.href = "mailto:ah.angelho@gmail.com")}
