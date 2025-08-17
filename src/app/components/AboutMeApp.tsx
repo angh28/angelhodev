@@ -29,7 +29,7 @@ export const AboutMeApp = () => {
           />
         </div>
         <div className="font-bold text-l md:text-xl text-mydarkpurple">
-          About me
+          about me
         </div>
       </div>
       <CustomModal isOpen={modalOpen} onRequestClose={closeModal}>
