@@ -33,8 +33,10 @@ export const ForFunApp = () => {
           >
             ⬅️
           </button>
-          <div className="pt-3 text-xl md:text-2xl font-bold underline decoration-myblue decoration-wavy underline-offset-3 md:underline-offset-6">
-            For Fun
+          <div className="md:pl-8 md:pr-8">
+            <div className="pt-3 text-xl md:text-2xl font-bold underline decoration-myblue decoration-wavy underline-offset-3 md:underline-offset-6">
+              For Fun
+            </div>
           </div>
         </div>
       </CustomModal>

@@ -40,8 +40,10 @@ export const AboutMeApp = () => {
           >
             ⬅️
           </button>
-          <div className="pt-3 text-xl md:text-2xl font-bold underline decoration-myblue decoration-wavy underline-offset-3 md:underline-offset-6">
-            About Me
+          <div className="md:pl-8 md:pr-8">
+            <div className="pt-3 text-xl md:text-2xl font-bold underline decoration-myblue decoration-wavy underline-offset-3 md:underline-offset-6">
+              About Me
+            </div>
           </div>
         </div>
       </CustomModal>
