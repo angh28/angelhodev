@@ -1,10 +1,6 @@
-Favicon - <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Freepik - Flaticon</a>
-
-<a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a>
-
-Other Icons - https://heroicons.com/solid
-
 Emojis copied from - https://getemoji.com/
+
+Icons - https://heroicons.com/solid and material UI
 
 <a target="_blank" href="https://icons8.com/icon/114445/linkedin-circled">linkedin</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 

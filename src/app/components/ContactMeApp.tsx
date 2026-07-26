@@ -1,6 +1,8 @@
 import { useState } from "react";
-import Image from "next/image";
 import { CustomModal } from "./CustomModal";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
 
 export const ContactMeApp = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -46,24 +48,18 @@ export const ContactMeApp = () => {
                   (window.location.href = "mailto:ah.angelho@gmail.com")
                 }
               >
-                <div className="text-2xl">💌 </div>
-                Email me
+                <MarkEmailUnreadIcon /> Email me
               </button>
               <button
                 className="flex gap-1.5 grow-0 items-center cursor-pointer bg-myblue hover:bg-blue-400 text-white font-bold mt-5 py-2 px-4 rounded-2xl w-35"
                 onClick={() =>
                   window.open(
                     "https://www.linkedin.com/in/angel-ho-269629263/",
-                    "_blank"
+                    "_blank",
                   )
                 }
               >
-                <Image
-                  src={`/images/linkedin_icon.png`}
-                  width={30}
-                  height={30}
-                  alt={"Linkedin Icon"}
-                ></Image>
+                <LinkedInIcon />
                 LinkedIn
               </button>
               <button
@@ -72,12 +68,7 @@ export const ContactMeApp = () => {
                   window.open("https://github.com/angh28", "_blank")
                 }
               >
-                <Image
-                  src={`/images/github_icon.png`}
-                  width={25}
-                  height={25}
-                  alt={"Github Icon"}
-                ></Image>
+                <GitHubIcon />
                 Github
               </button>
             </div>
