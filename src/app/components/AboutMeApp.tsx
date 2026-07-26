@@ -26,6 +26,7 @@ export const AboutMeApp = () => {
             height={115}
             alt={"smiling angel"}
             className="ml-5"
+            loading="eager"
           />
         </div>
         <div className="font-bold text-l md:text-xl text-mydarkpurple">
